@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  background-color: $color-bg-main;
+  grid-template-columns: repeat(7, [col-start] minmax(14rem, 1fr) [col-end]);
+  @media only screen and (max-width: 37.5rem) {
+    grid-template-columns: 100%;
+    width: inherit;
+
+    
+  }
+}
+// .test{
+//    grid-column: col-start 2/col-end 7;
+
+//    height: 100vh;
+//    position: relative;
+// }
+.main {
+  grid-column: col-start 2 / col-end 7;
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1;
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+.mail{
+   margin-top: 7rem;
+  
+  display: grid;
+  background-color: $color-bg-main;
+  grid-template-columns: repeat(6, [col-start] minmax(14rem, 1fr) [col-end]);
+
+  &__sidebar{
+    grid-column: 1/2;
+    background-color: red;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 7rem);
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+   
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+   
+  }
+
+  &__main{
+    grid-column: 2/-1;
+    background-color: blue;
+  }
+}

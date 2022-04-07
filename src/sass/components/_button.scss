@@ -1,0 +1,31 @@
+.btn{
+  &,
+  &:link,
+  &:visited{
+    text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 3rem;
+        display: inline-block;
+        border-radius: 1rem;
+        transition: all .2s;
+        position: relative;
+        outline: none;
+  }
+
+  &--green {
+        background-color: $color-green;
+        color: $color-white;
+        border: none;
+        transition: all .2;
+        width: 100%;
+        
+        &::after {
+            background-color: $color-primary;
+        }
+
+
+        &:hover{
+          background-color: $color-green-dark;
+        }
+    }
+}

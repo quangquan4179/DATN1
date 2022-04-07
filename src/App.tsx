@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Sidebar from './components/sidebar';
+import Main from './components/main/Main';
+// import Login from './components/authentication/Login';
+// import Register from './components/authentication/Register';
+// import PasswordRecovery from './components/authentication/PasswordRecovery';
+
+import { BrowserRouter } from 'react-router-dom'
+import Authentication from './components/authentication/Authentication';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const [auth,setAuth]=useState(true)
+
+  if(auth===true){
+    return (
+    <div className='container'>
+      <BrowserRouter>
+        <Sidebar />
+
+        <Main/>
+      </BrowserRouter>
     </div>
-  );
+  )}else{
+  return(
+    <Authentication/>
+    // <Register/>
+    // <PasswordRecovery/>
+  )
+  }
 }
 
 export default App;

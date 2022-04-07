@@ -1,0 +1,47 @@
+
+.form-group{
+    position: relative;
+
+    &:not(:last-child){
+        margin-bottom: 2rem;
+    }
+
+}
+.form-input{
+    outline: none;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    border: 1px solid $color-white-3;
+    
+  
+}
+.form-input:focus{
+    border:2px solid $color-primary;
+}
+.form-label{
+    font-size: inherit;
+    font-weight: 500;
+    color: $color-gray-text;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    cursor: text;
+    user-select: none;
+    transition: 0.15s ease-in-out;
+    left: 1.2rem;
+    display: block;
+
+}
+
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus)~ .form-label{
+    top: 0;
+
+    color: $color-primary;
+    background-color: $color-white;
+}
