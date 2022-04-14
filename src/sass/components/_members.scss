@@ -19,6 +19,8 @@
     &__filter{
         display: flex;
         margin-top: 1rem;
+        padding: 3rem 1rem;
+        
     }
     &__search{
         flex-grow: 9;
@@ -32,13 +34,19 @@
         
         flex-grow: 1;
         position: relative;
+        background-color: $color-white;
         &-select{
             outline: none;
-          width: 100%;
+             width: 100%;
             padding: 1.5rem ;
             font-size: 1.7rem;
             border-radius: 5px;
             border: 1px solid $color-white-3;
+
+            &>option{
+                background-color: $color-white;
+
+            }
         }
         &-select:focus{
             border:2px solid $color-primary;

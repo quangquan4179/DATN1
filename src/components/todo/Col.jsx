@@ -1,6 +1,6 @@
 import React from 'react'
-import { Draggable, Droppable } from 'react-beautiful-dnd'
-import { list, card } from '../../interface'
+import { Droppable } from 'react-beautiful-dnd'
+// import { list, card } from '../../interface'
 import Card from './Card'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AddCardContainer from './AddCardContainer'

@@ -9,10 +9,10 @@ const Members = (props: Props) => {
         <h1 className='mt members__heading'>Members</h1>
         <div className="members__container">
           <div className='members__switch-position'>
-            <button className='btn'>All</button>
-            <button className='btn'>CEO</button>
-            <button className='btn'>FULLTIME</button>
-            <button className='btn'> PARTTIME</button>
+            <button className='btn__members '>All</button>
+            <button className='btn__members '>CEO</button>
+            <button className='btn__members '>FULLTIME</button>
+            <button className='btn__members '> PARTTIME</button>
 
           </div>
          <div className='members__filter'>
@@ -39,7 +39,12 @@ const Members = (props: Props) => {
 
             <table className='table members__table' >
                     <thead className='table__header'>
-                        <tr>
+                        <tr> 
+                            <th>
+                              <span>
+                                <input type="checkbox"/>
+                              </span>
+                            </th>
                             <th>MSNV</th>
                             <th>Name</th>
                             <th>Location</th>

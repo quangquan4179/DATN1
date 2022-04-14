@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+/advanced-css-course-master
 .pnp.js
 
 # testing

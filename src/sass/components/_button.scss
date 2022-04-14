@@ -28,4 +28,30 @@
           background-color: $color-green-dark;
         }
     }
+
+
+    &__members{
+        &,
+        &:link,
+        &:visited{
+          text-transform: uppercase;
+              text-decoration: none;
+              padding: 1.5rem 3rem;
+              display: inline-block;
+             
+              transition: all .2s;
+              position: relative;
+              outline: none;
+             }
+      background-color: $color-white;
+      border: 4px solid transparent;
+      &:not(:first-child){
+        margin-left: 1rem;
+      }
+
+      
+    }
+    &__members:focus{
+      border-bottom: 4px solid $color-primary;
+    }
 }

@@ -9,6 +9,11 @@ type Props = {
 const Member = ({MSNV,name}: Props) => {
   return (
    <tr>
+      <td>
+                              <span>
+                                <input type="checkbox"/>
+                              </span>
+                            </td>
        <td>{MSNV}</td>
        <td>{name}</td>
        <td>{MSNV}</td>
